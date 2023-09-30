@@ -7,7 +7,7 @@ function getDataFromLocalStorage(){
     return JSON.parse(localStorage.getItem("articles"))
 }
 const App = () => {
-  const[articles , setArticles] = useState(getDataFromLocalStorage)
+  const[articles , setArticles] = useState(getDataFromLocalStorage())
   const [showForm , setShowForm] = useState(true)
   
 
