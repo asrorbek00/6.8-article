@@ -4,7 +4,7 @@ import NewArticle from './components/NewArticle'
 import AddNewArticle from './components/AddNewArticle'
 
 function getDataFromLocalStorage(){
-    return JSON.parse(localStorage.getItem("articles"))
+    return JSON.parse(localStorage.getItem("articles"))  || []
 }
 const App = () => {
   const[articles , setArticles] = useState(getDataFromLocalStorage())
